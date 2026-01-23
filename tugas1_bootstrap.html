@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+     <style>
+        .hero {
+            background-image: url(./202502251001-main.cropped_1740452509.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        .overlay {
+            background-color:rgba(0, 0, 0, 0.5);
+            min-height: 100vh;
+        }
+
+        .foto{
+            max-width: 80px;
+            height: auto;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+     <div class="hero">
+        <div class="overlay d-flex justify-content-center align-items-center text-center">
+            <div class="text-white">
+                <h1 class="display-5 fw-bold">Sistem Manajemen Siswa</h1>
+                <p class="fs-4">Kelola data kehadiran,profil,dan status akademik siswa dengan lebih mudah dan efisien</p>
+                <button class="btn btn-primary btn-lg">Lihat Tabel</button>
+                <button class="btn btn-outline-primary btn-lg">Panduan</button>
+            </div>
+        </div>
+    </div>
+        <h2 class="mt-5 text-center text-black">Tabel Data Siswa</h2>
+       
+        <table class="table table-bordered table-striped table-hover align-middle text-center">
+            <thead>
+                <tr class="table-dark">
+                    <th>No</th>
+                    <th>Foto</th>
+                    <th>Nama</th>
+                    <th>Kelas</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="./Screenshot 2026-01-22 135638.png" alt="" class="foto rounded-circle d-block img-fluid mx-auto"></td>
+                    <td>Ayaa</td>
+                    <td>X PPLG 1</td>
+                    <td><span class="badge bg-success">Aktif</span></td>
+                    <td> <button class="btn btn-success">Edit</button>
+                    <button class="btn btn-danger">Hapus</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="./Screenshot 2026-01-22 135716.png" alt="" class="foto rounded-circle d-block img-fluid mx-auto"></td>
+                    <td>Inayah</td>
+                    <td>X PPLG 2</td>
+                    <td><span class="badge bg-warning text-black">Izin</span></td>
+                    <td> <button class="btn btn-success">Edit</button>
+                    <button class="btn btn-danger">Hapus</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="./Screenshot 2026-01-22 135729.png" alt="" class="foto rounded-circle d-block img-fluid mx-auto"></td>
+                    <td>Saniya</td>
+                    <td>X PPLG 3</td>
+                    <td><span class="badge bg-danger">Tidak hadir</span></td>
+                    <td> <button class="btn btn-success">Edit</button>
+                    <button class="btn btn-danger">Hapus</button></td>
+                </tr>
+            </tbody>
+        </table>
+         <div class="container mt-5 text-center">
+    <button class="btn btn-primary">Tambah Data</button>
+    <button class="btn btn-outline-primary">Ekspor Excel</button>
+  </div>
+</body>
+</html>
